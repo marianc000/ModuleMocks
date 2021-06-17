@@ -1,3 +1,3 @@
-# Remapping JavaScript module names with import maps
+# Testing and mocking JavaScript modules in browser
 
-Sample code for my post https://marian-caikovski.medium.com/remapping-javascript-module-names-with-import-maps-bd2bad121c1d about Import maps and their use cases. Rollup can be used to bundle ES modules that are remapped in an import map.
+Sample code for my post https://marian-caikovski.medium.com/testing-and-mocking-javascript-modules-in-browser-ae9fc333ee5d about creating mocks of ES modules in a browser using import maps
