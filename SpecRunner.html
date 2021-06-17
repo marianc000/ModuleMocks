@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            background-color: aliceblue;
+        }
+    </style>
+    <iframe src="SpecRunnerNoMocks.html" scrolling="no"></iframe>
+    <iframe src="SpecRunnerWithMocks.html" scrolling="no"></iframe>
+    <script>
+        function adjustIframeHeight(e) {
+            setTimeout(() => {
+                this.style.height = this.contentDocument.body.scrollHeight + 'px';
+            },1000); // wait the tests to execute
+        }
+        const iframes = document.querySelectorAll('iframe');
+        iframes.forEach(iframe => {
+            iframe.addEventListener('load', adjustIframeHeight);
+        });
+
+    </script>
+
+</body>
+
+</html>
